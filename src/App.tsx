@@ -4,6 +4,7 @@ function App() {
   const Container = styled.div`
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   `;
@@ -15,9 +16,17 @@ function App() {
     font-weight: bold;
   `;
 
+  const Description = styled.p`
+    color: grey;
+    font-size: 4rem;
+  `;
+
   return (
     <Container>
       <Item>iGym</Item>
+      <Description>
+        Here is my new React project to learn typescript 😊
+      </Description>
     </Container>
   );
 }
